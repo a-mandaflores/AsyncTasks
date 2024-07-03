@@ -7,6 +7,7 @@ await Task.WhenAll(Await10Seconds(), Await5Seconds(), Await1Second());
 var positionExecuted = Task.WaitAny(Await10Seconds(), Await5Seconds(), Await1Second());
 Console.WriteLine(positionExecuted);
 
+
 async Task Await10Seconds()
 {
     Console.WriteLine($"start: {nameof(Await10Seconds)}");
